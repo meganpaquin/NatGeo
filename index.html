@@ -5,8 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Geographic</title>
+
+    <!--import the icons from fontawesome-->
+    <script src="https://kit.fontawesome.com/2b8896c554.js" crossorigin="anonymous"></script>
+
+    <!--import the CSS styles-->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>National Geographic</h1>    
+    <nav>
+        <!--add the logo-->
+        <img src="pictures/national-geographic.webp" alt="natgeo logo">
+        <a href="#">Login</a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#">Newsletters</a>
+        <a href="#">Subscribe</a>
+        <a href="#">Menu <i class="fa-solid fa-angles-down"></i></a>
+    </nav>
+
+    <header>
+        <h1>Latest Stories</h1>
+        <p>Subscribe for full access to read stroies from National Geographic.</p>
+        <div class="line"></div>
+    </header>
+
+    <main>
+        <section id="feature-article">
+            <img src="pictures/stranger-kindness.jpg" alt="picture of coin and family photo">
+            <h3>History & Culture</h3>
+            <p>How a stranger's kindness helped give us the Big Bang Theory</p>
+            <p><i class="fa-solid fa-bars"></i></p>
+        </section>
+
+        <section id="latest-stories-box">
+            <h3>Today's Picks</h3>
+                <div id="science-stories">
+                    <img src="pictures/pills.webp" alt="image of medical pills">
+                    <p>Science</p>
+                    <a href="#">Article description</a>
+                </div>
+                <div id="travel-stories">
+                    <img src="pictures/asian-theaters.jpg" alt="image of indie theaters">
+                    <p>Travel</p>
+                    <a href="#">Article description</a>
+                </div>
+                <div id="animals-stories">
+                    <img src="pictures/monarchbutterfly.jpg" alt="image of monarch butterflies">
+                    <p>Animals</p>
+                    <a href="#">Article description</a>
+                </div>
+                <div id="culture-stories">
+                    <img src="pictures/shipwreck.jpg" alt="image of shipwreck">
+                    <p>History & Culture</p>
+                    <a href="#">Article description</a>
+                </div>
+                <div id="history-stories">
+                    <img src="pictures/pharaoh.jpg" alt="image of eqypt">
+                    <p>History Magazine</p>
+                    <a href="#">Article description</a>
+                </div>
+                <div id="magazine-stories">
+                    <img src="pictures/sinking-homes.jpg" alt="image of sinkhole">
+                    <p>Magazine</p>
+                    <a href="#">Article description</a>
+                </div>
+                <p>See More</p>        
+        </section>
+
+        <section id="article-highlights">
+            <div id="highlight-one">
+                <a href="#" target="_blank">
+                    <img src="pictures/chefs-cooking.jpg" alt="image of chefs">
+                    <div class="line"></div>
+                    <h3><a href="#" taregt="_blank">Photography</a><span>Photo of the Day</span></h3>
+                    <p>31 Archival photos that will ignite your curiosity</p>
+                    <i class="fa-solid fa-images"></i>
+                </a>
+            </div>
+            <div id="highlight-two">
+                <a href="#" target="_blank">
+                    <img src="pictures/garbage-art.jpg" alt="image of magazine">
+                    <div class="line"></div>
+                    <h3><a href="#" target="_blank">Magazine</a><span><a href="#" target="_blank">Proof</a></span></h3>
+                    <p>31 Archival photos that will ignite your curiosity</p>
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>
