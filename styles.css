@@ -1,10 +1,16 @@
-/*body*/
+/*global*/
 body{
     margin: 0px;
     padding: 0px;
     background-color: black;
     background-attachment: scroll;
     color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
 }
 
 /*header*/
@@ -62,6 +68,7 @@ nav a{
     margin-top: 3vh;
     padding-top: 0px;
     font-weight: normal;
+    text-transform: capitalize;
     
 }
 
@@ -119,3 +126,73 @@ header p{
     background-color: #ffce00;
     color: black;
 }
+
+/*set up the box structure*/
+    /*left hand side*/
+    #latest-stories-box{
+        display: flex;
+        flex-direction: column;
+        border: 1px yellow solid;
+        width: 300px;
+    }
+    .picture-title-left{
+        display: flex;
+        flex-direction: row;
+        border: 1px yellow solid;
+        width: 300px;
+    }
+
+    .title-plus-description-box{
+        display: flex;
+        flex-direction: column;
+    }
+    #latest-stories-box img{
+        height: 90px;
+        width: 90px;
+        flex: left;
+    }
+
+    /*medium feature stories*/
+    .medium-feature-description{
+        display: flex;
+        flex-direction: column;
+        border: yellow 1px solid;
+        width: 425px;
+    }
+    #highlight-one{
+        display: flex;
+        flex-direction: column;
+        border: green 1px solid;
+        width: 425px;
+    }
+    #highlight-one img{
+        height: 315px;
+        width: 425px;
+    }
+    #highlight-two{
+        display: flex;
+        flex-direction: column;
+        border: green 1px solid;
+        width: 425px;
+    }
+    #highlight-two img{
+        height: 315px;
+        width: 425px;
+    }
+
+    #article-highlights{
+        display: flex;
+        flex-direction: row;
+        flex: right;
+    }
+
+    /*put the feature article together*/
+    #feature-article img{
+        width: 850px;
+    }
+    #feature-description{
+        display: flex;
+        flex-direction: column;
+        border: pink 1px solid;
+        width: 850px;
+    }
