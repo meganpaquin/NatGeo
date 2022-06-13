@@ -5,6 +5,7 @@ body{
     background-color: black;
     background-attachment: scroll;
     color: white;
+    width: auto;
 }
 
 a{
@@ -133,13 +134,13 @@ header p{
         display: flex;
         flex-direction: column;
         border: 1px yellow solid;
-        width: 300px;
+        width: 380px;
     }
     .picture-title-left{
         display: flex;
         flex-direction: row;
         border: 1px yellow solid;
-        width: 300px;
+        width: 380px;
     }
 
     .title-plus-description-box{
@@ -157,29 +158,24 @@ header p{
         display: flex;
         flex-direction: column;
         border: yellow 1px solid;
-        width: 425px;
+        width: 300px;
+        height: 200x;
     }
     #highlight-one{
         display: flex;
         flex-direction: column;
         border: green 1px solid;
-        width: 425px;
-    }
-    #highlight-one img{
-        height: 315px;
-        width: 425px;
+        width: 350px;
+        height: 400px;
+        margin-right: 40px;
     }
     #highlight-two{
         display: flex;
         flex-direction: column;
-        border: green 1px solid;
-        width: 425px;
+        border: red 5px solid;
+        width: 350px;
+        height: 400px;
     }
-    #highlight-two img{
-        height: 315px;
-        width: 425px;
-    }
-
     #article-highlights{
         display: flex;
         flex-direction: row;
@@ -188,11 +184,29 @@ header p{
 
     /*put the feature article together*/
     #feature-article img{
-        width: 850px;
+        width: 700px;
     }
     #feature-description{
         display: flex;
         flex-direction: column;
         border: pink 1px solid;
-        width: 850px;
+        width: 700px;
+        height: 400px;
+        background-image: url('pictures/stranger-kindness.jpg');
+        background-size: cover;
+        justify-content: end;
+    }
+
+    #feature-article{
+        display: flex;
+        flex-direction: column;
+        flex: right;
+    }
+
+    #everything{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        border: 1px red solid;
+        margin-left: 10%;
     }
