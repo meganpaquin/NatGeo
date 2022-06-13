@@ -76,3 +76,46 @@ nav a{
     margin-left: 1vh;
     font-weight: normal;
 }
+
+/*title*/
+h1{
+    font-family: GeoBrandBold,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
+    text-align: center;
+    font-size: 54px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 0;
+    line-height: 1.50;
+}
+
+header p{
+    font-family: GeoBrandBold,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
+    text-align: center;
+    letter-spacing: .1px; 
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.line{
+    width: 5%;
+    /*why does the justify content not ever work right. It doesn't put the line in the center of the page*/
+    justify-content: center;
+    margin-left: 47%;
+    height: 2px;
+    border-bottom: #ffce00 4px solid;
+}
+
+#subscribe-inline{
+    background-color: black;
+    color: white;
+    height: 3vh;
+    padding: none;
+    text-decoration: none;
+}
+
+#subscribe-inline:hover{
+    background-color: #ffce00;
+    color: black;
+}
