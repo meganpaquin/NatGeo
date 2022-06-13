@@ -133,19 +133,33 @@ header p{
     #latest-stories-box{
         display: flex;
         flex-direction: column;
-        border: 1px yellow solid;
-        width: 380px;
+        /*border: 1px yellow solid;*/
+        width: 420px;
     }
     .picture-title-left{
         display: flex;
         flex-direction: row;
-        border: 1px yellow solid;
-        width: 380px;
+        /*border: 1px yellow solid;*/
+        width: 350px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-right: 10px;
+        font-family: GeoBrandBold,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
+        padding-top: 0;
+        margin-right: 0px;
     }
 
     .title-plus-description-box{
         display: flex;
         flex-direction: column;
+        margin-top: 0;
+        margin-left: 20px;
+        font-weight: normal;
+        font-size: 15px;
+        padding: 0px;
+        padding-right: 25px;
+        letter-spacing: 1px;
+        
     }
     #latest-stories-box img{
         height: 90px;
@@ -157,24 +171,27 @@ header p{
     .medium-feature-description{
         display: flex;
         flex-direction: column;
-        border: yellow 1px solid;
+        /*border: yellow 1px solid;*/
         width: 300px;
         height: 200x;
     }
     #highlight-one{
         display: flex;
         flex-direction: column;
-        border: green 1px solid;
+        /*border: green 1px solid;*/
         width: 350px;
         height: 400px;
         margin-right: 40px;
+        margin-top: 30px;
     }
     #highlight-two{
         display: flex;
         flex-direction: column;
-        border: red 5px solid;
+        /*border: red 5px solid;*/
         width: 350px;
         height: 400px;
+        margin-right: 0;
+        margin-top: 30px;
     }
     #article-highlights{
         display: flex;
@@ -189,7 +206,7 @@ header p{
     #feature-description{
         display: flex;
         flex-direction: column;
-        border: pink 1px solid;
+        /*border: pink 1px solid;*/
         width: 700px;
         height: 400px;
         background-image: url('pictures/stranger-kindness.jpg');
@@ -207,6 +224,22 @@ header p{
         display: flex;
         flex-direction: row;
         width: 80%;
-        border: 1px red solid;
+        /*border: 1px red solid;*/
         margin-left: 10%;
+    }
+
+
+
+/*setting up the fonts for the boxes*/
+    h3{
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    h4{
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
     }
