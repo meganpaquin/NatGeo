@@ -6,6 +6,7 @@ body{
     background-attachment: scroll;
     color: white;
     width: auto;
+    font-family: GeoBrandBold, CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
 }
 
 a{
@@ -36,7 +37,6 @@ nav img{
 nav a{
     text-decoration: none;
     text-transform: uppercase;
-    font-family: GeoBrandBold, CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
     color: black;
     font-size: 14px;
     font-weight: bolder;
@@ -54,6 +54,7 @@ nav a{
     padding-top: 3vh;
     padding-left: 3vh;
     padding-right: 3vh;
+    /* make the animation*/
     display: block;
     background: linear-gradient(to right, #ffce00 50%, black 50%);
     background-size: 200% 100%;
@@ -75,6 +76,7 @@ nav a{
     padding-top: 0px;
     font-weight: normal;
     text-transform: capitalize;
+    /*make the animation*/
     display: block;
     background: linear-gradient(to top, #ffce00 50%, white 50%);
     background-size: 100% 200%;
@@ -107,9 +109,8 @@ nav a{
     font-weight: normal;
 }
 
-/*title*/
+/*header*/
 h1{
-    font-family: GeoBrandBold,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
     text-align: center;
     font-size: 54px;
     letter-spacing: 3px;
@@ -120,7 +121,6 @@ h1{
 }
 
 header p{
-    font-family: GeoBrandBold,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
     text-align: center;
     letter-spacing: .1px; 
     font-size: 20px;
@@ -130,7 +130,6 @@ header p{
 
 .line{
     width: 5%;
-    /*why does the justify content not ever work right. It doesn't put the line in the center of the page*/
     justify-content: center;
     margin-left: 47%;
     height: 2px;
@@ -160,14 +159,12 @@ header p{
     .picture-title-left{
         display: flex;
         flex-direction: row;
-        /*border: 1px yellow solid;*/
         width: 350px;
         margin-top: 15px;
         margin-bottom: 15px;
-        margin-right: 0px;
+        margin-right: 0;
         padding-right: 10px;
         padding-top: 0;
-        font-family: GeoBrandBold,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
     }
 
     .align-items-up{
@@ -206,20 +203,13 @@ header p{
     .medium-feature-description{
         display: flex;
         flex-direction: column;
-        width: 289=0px;
-        height: 200x;
-        margin-left: 20px;
+        width: 280px;
+        height: 400x;
+        margin-left: 0;
         padding-right: 15px;
-    }
-
-    .medium-feature-description p{
-        font-size: 22px;
-        font-weight: bolder;
-        letter-spacing: 1px;
-        margin-top: 0;
-    }
-    .medium-feature-description h4{
-        margin-bottom: 8px;
+        padding-left: 20px;
+        background-color: white;
+        color: black;
     }
 
     #highlight-one{
@@ -229,7 +219,34 @@ header p{
         height: 400px;
         margin-right: 40px;
         margin-top: 30px;
+        padding: 0;
     }
+    .highlight-img{
+        width: 280px;
+        height: 200px;
+        margin-bottom: none;
+        overflow: hidden;
+
+        background: linear-gradient(to top, transparent 98%, #ffec00 2%);
+        background-size: 100% 200%;
+        background-position: left top;
+        transition: all 1s ease-in-out;
+    }
+
+    .highlight-img:hover{
+        background-position: right bottom;
+    }
+
+    .highlight-img img{
+        width: 280px;
+        height: 200px;
+        transition: all 1s ease-in-out;
+    }
+
+    .highlight-img:hover img{
+        transform: scale(1.20);
+    }
+
     #highlight-two{
         display: flex;
         flex-direction: column;
@@ -238,6 +255,7 @@ header p{
         margin-right: 0;
         margin-top: 30px;
     }
+
     #article-highlights{
         display: flex;
         flex-direction: row;
@@ -248,7 +266,6 @@ header p{
     #feature-description{
         display: flex;
         flex-direction: column;
-        /*border: pink 1px solid;*/
         width: 610px;
         height: 400px;
         background-image: url('pictures/stranger-kindness.jpg');
@@ -268,20 +285,15 @@ header p{
         background-size: 120%;
         background-position: center center;
         cursor: pointer;
-
     }
 
     #everything{
         display: flex;
         flex-direction: row;
         width: 80%;
-        /*border: 1px red solid;*/
         margin-left: 12%;
         margin-top: 30px;
     }
-
-
-
 
 /*setting up the fonts for the boxes*/
     h3{
@@ -290,14 +302,10 @@ header p{
         letter-spacing: 2px;
         margin-bottom: 0;
         margin-top: 0;
-    }
-
-    h4{
-        font-size: 13px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: bold;
-    }
+        border-left: #ffce00 solid 5px;
+        padding-left: 15px;
+        line-height: 30px;
+        }
 
     #feature-description h4{
       margin-left: 20px;
@@ -315,17 +323,45 @@ header p{
         text-shadow: 1px 1px black;
     }
 
+    .medium-feature-description p{
+        font-size: 22px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        margin-top: 0;
+        color: black;
+    }
+
+    .medium-feature-description h4{
+        margin-bottom: 8px;
+        color: black
+    }
+
+    .medium-feature-description a{
+        color: darkgrey;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .medium-feature-description span{
+        color: darkgrey;
+        text-transform: uppercase;
+    }
+
     .icon-pairs{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         width: 130px;
+        margin-bottom: 30px;
+        margin-top: 10px;
     }
 
     .icon-pairs2{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         width: 130px;
         margin-left:20px;
         margin-top: 20px;
@@ -338,9 +374,25 @@ header p{
     }
 
     .color-icon{
-        color: white;
+        color: black;
         font-size: 14px;
     }
-  
+    
+    .see-more{
+        border-bottom: #ffce00 solid 5px;
+        margin-right: 340px;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        font-size: 14px;
 
+        display: block;
+        background: linear-gradient(to top, #ffce00 50%, black 50%);
+        background-size: 100% 200%;
+        background-position: left top;
+        transition: all .5s ease-in-out;
+    }
 
+    .see-more:hover{
+        background-position: left bottom;
+        color:  black;
+    }
