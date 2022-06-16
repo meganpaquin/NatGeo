@@ -54,10 +54,15 @@ nav a{
     padding-top: 3vh;
     padding-left: 3vh;
     padding-right: 3vh;
+    display: block;
+    background: linear-gradient(to right, #ffce00 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
 }
 
 #subscribe:hover{
-    background-color: #ffce00;
+    background-position: left bottom;
     color: black;
 }
 
@@ -70,13 +75,30 @@ nav a{
     padding-top: 0px;
     font-weight: normal;
     text-transform: capitalize;
+    display: block;
+    background: linear-gradient(to top, #ffce00 50%, white 50%);
+    background-size: 100% 200%;
+    background-position: left top;
+    transition: all .5s ease-out;
     
 }
 
 #newsletter:hover{
-    background-color: #ffce00;
     text-decoration: none;
     font-weight: normal;
+    background-position: left bottom;
+}
+
+#subscribe-scroll-up{
+    display: inline-block;
+    background: linear-gradient(to top, #ffce00 50%, black 50%);
+    background-size: 100% 200%;
+    background-position: left top;
+    transition: all 1s ease-out;
+}
+#subscribe-scroll-up:hover{
+    background-position: left bottom;
+    color: black;
 }
 
 #icon-menu{
@@ -223,9 +245,6 @@ header p{
     }
 
     /*put the feature article together*/
-    #feature-article img{
-        width: 600px;
-    }
     #feature-description{
         display: flex;
         flex-direction: column;
@@ -235,12 +254,21 @@ header p{
         background-image: url('pictures/stranger-kindness.jpg');
         background-size: cover;
         justify-content: end;
+        background-position: center center;
     }
 
     #feature-article{
         display: flex;
         flex-direction: column;
         flex: right;
+    }
+
+    #feature-description:hover{
+        background-image: url('pictures/stranger-kindness.jpg');
+        background-size: 120%;
+        background-position: center center;
+        cursor: pointer;
+
     }
 
     #everything{
@@ -307,6 +335,11 @@ header p{
     .icon-pairs h4{
         padding: 0;
         margin: 0;
+    }
+
+    .color-icon{
+        color: white;
+        font-size: 14px;
     }
   
 
