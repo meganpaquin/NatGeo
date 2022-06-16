@@ -11,16 +11,20 @@
 
     <!--import the CSS styles-->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="small-devices.css">
+
+
 </head>
 <body>
     <nav>
-        <!--add the logo-->
-        <img src="pictures/national-geographic.webp" alt="natgeo logo">
+        <img id="full-size-natgeo-logo" src="pictures/national-geographic.webp" alt="natgeo logo">
+        <img id="small-logo" src="pictures/small-logo.png" alt="smaller natgeo logo">
         <a href="#">Login</a>
-        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i id="magnify-icon" class="fa-solid fa-magnifying-glass"></i></a>
         <a id="newsletter" href="#">Newsletters</a>
         <a id="subscribe" href="#">Subscribe</a>
-        <a href="#">Menu <i id="icon-menu" class="fa-solid fa-angles-down"></i></a>
+        <a id="menu" href="#">Menu</a>
+        <i class="fa-solid fa-angles-down icon-menu"></i>
     </nav>
 
     <header>
@@ -83,13 +87,13 @@
                 <div id="feature-description">
                     <h4>History & Culture</h3>
                     <p>How a stranger's kindness helped give us the Big Bang Theory</p>
-                    <div class="icon-pairs2" style="width:70px; ">   
-                        <i class="fa-solid fa-bars color-icon"></i><h4>Read</h4>
+                    <div class="icon-pairs2">   
+                        <i class="fa-solid fa-bars header-icon"></i><h4>Read</h4>
                     </div>
                 </div>
             </div>
             <section id="article-highlights">
-                <div id="highlight-one">
+                <div class="highlight-one">
                     <a href="#" target="_blank">
                         <div class="highlight-img"><img src="pictures/chefs-cooking.jpg" alt="image of chefs"></div>    
                         <div class="medium-feature-description">
@@ -101,12 +105,12 @@
                         </div>
                     </a>
                 </div>
-                <div id="highlight-two">
+                <div class="highlight-one">
                     <a href="#" target="_blank">
-                        <div class="highlight-img"><img class="image-zoom" src="pictures/garbage-art.jpg" alt="image of magazine"></div>
+                        <div class="highlight-img"><img src="pictures/garbage-art.jpg" alt="image of magazine"></div>
                         <div class="medium-feature-description"> 
                             <h4><a href="#" target="_blank">Magazine</a><span style="margin-left: 15px; font-weight: lighter;"><a href="#" target="_blank">Proof</a></span></h4>
-                            <p>These artists thransform garbage into garb to take a stand</p>
+                            <p>These artists transform garbage into garb to take a stand</p>
                             <div class="icon-pairs" style="width:70px">   
                                 <i class="fa-solid fa-bars color-icon"></i><h4>Read</h4>
                             </div>

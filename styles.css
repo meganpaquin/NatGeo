@@ -16,6 +16,9 @@ a{
 }
 
 /*header*/
+#small-logo{
+    visibility: hidden;
+}
 nav{
     display: flex;
     flex-direction: row;
@@ -204,37 +207,35 @@ header p{
         display: flex;
         flex-direction: column;
         width: 280px;
-        height: 400x;
+        height: 200px;
         margin-left: 0;
         padding-right: 15px;
         padding-left: 20px;
         background-color: white;
         color: black;
     }
-
-    #highlight-one{
+    
+    .highlight-one{
         display: flex;
         flex-direction: column;
         width: 280px;
         height: 400px;
         margin-right: 40px;
         margin-top: 30px;
-        padding: 0;
+        padding: 0 0 0 0;
     }
     .highlight-img{
         width: 280px;
         height: 200px;
-        margin-bottom: none;
+        position: center center;
         overflow: hidden;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
 
-        background: linear-gradient(to top, transparent 98%, #ffec00 2%);
-        background-size: 100% 200%;
-        background-position: left top;
-        transition: all 1s ease-in-out;
     }
 
     .highlight-img:hover{
-        background-position: right bottom;
+        border-bottom: #ffce00 solid 5px;
     }
 
     .highlight-img img{
@@ -245,15 +246,6 @@ header p{
 
     .highlight-img:hover img{
         transform: scale(1.20);
-    }
-
-    #highlight-two{
-        display: flex;
-        flex-direction: column;
-        width: 280px;
-        height: 400px;
-        margin-right: 0;
-        margin-top: 30px;
     }
 
     #article-highlights{
@@ -297,7 +289,7 @@ header p{
 
 /*setting up the fonts for the boxes*/
     h3{
-        font-size: 38px;
+        font-size: 34px;
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: 0;
@@ -315,10 +307,11 @@ header p{
 
     #feature-description p{
         font-size: 38px;
+        margin-top: 10px;
         margin-left: 20px;
         margin-bottom: 0;
         font-weight: bold;
-        letter-spacing: 1px;
+        letter-spacing: .1px;
         padding-right: 20px;
         text-shadow: 1px 1px black;
     }
@@ -327,7 +320,7 @@ header p{
         font-size: 22px;
         font-weight: bolder;
         letter-spacing: 1px;
-        margin-top: 0;
+        margin-top: 20px;
         color: black;
     }
 
@@ -352,7 +345,7 @@ header p{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 130px;
+        width: 110px;
         margin-bottom: 30px;
         margin-top: 10px;
     }
@@ -360,24 +353,33 @@ header p{
     .icon-pairs2{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 130px;
-        margin-left:20px;
+        align-items: left;
+        width: 70px;
+        margin-left: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
-        border: #ffce00 solid 3px;
     }
+
+    .icon-pairs2 h4{
+        padding: 0;
+        margin: 0;
+    }
+
     .icon-pairs h4{
         padding: 0;
         margin: 0;
+    }
+
+    .header-icon{
+        color: white;
+        margin-right: 0;
     }
 
     .color-icon{
         color: black;
         font-size: 14px;
     }
-    
+
     .see-more{
         border-bottom: #ffce00 solid 5px;
         margin-right: 340px;
