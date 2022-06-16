@@ -133,7 +133,6 @@ header p{
     #latest-stories-box{
         display: flex;
         flex-direction: column;
-        /*border: 1px yellow solid;*/
         width: 420px;
     }
     .picture-title-left{
@@ -143,43 +142,68 @@ header p{
         width: 350px;
         margin-top: 15px;
         margin-bottom: 15px;
-        padding-right: 10px;
-        font-family: GeoBrandBold,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
-        padding-top: 0;
         margin-right: 0px;
+        padding-right: 10px;
+        padding-top: 0;
+        font-family: GeoBrandBold,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
+    }
+
+    .align-items-up{
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-weight: bolder;
+        text-transform: uppercase;
     }
 
     .title-plus-description-box{
         display: flex;
         flex-direction: column;
-        margin-top: 0;
         margin-left: 20px;
         font-weight: normal;
-        font-size: 15px;
-        padding: 0px;
+        font-size: 16px;
+        padding-top: 0;
         padding-right: 25px;
         letter-spacing: 1px;
-        
+        height: 90px;   
+        align-items: flex-start; 
     }
+    .title-plus-description-box p{
+        padding-top: 0;
+        font-weight: bolder; 
+        text-transform: uppercase;
+    }
+
     #latest-stories-box img{
         height: 90px;
         width: 90px;
         flex: left;
+        padding: 0;
     }
 
     /*medium feature stories*/
     .medium-feature-description{
         display: flex;
         flex-direction: column;
-        /*border: yellow 1px solid;*/
-        width: 300px;
+        width: 289=0px;
         height: 200x;
+        margin-left: 20px;
+        padding-right: 15px;
     }
+
+    .medium-feature-description p{
+        font-size: 22px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        margin-top: 0;
+    }
+    .medium-feature-description h4{
+        margin-bottom: 8px;
+    }
+
     #highlight-one{
         display: flex;
         flex-direction: column;
-        /*border: green 1px solid;*/
-        width: 350px;
+        width: 280px;
         height: 400px;
         margin-right: 40px;
         margin-top: 30px;
@@ -187,8 +211,7 @@ header p{
     #highlight-two{
         display: flex;
         flex-direction: column;
-        /*border: red 5px solid;*/
-        width: 350px;
+        width: 280px;
         height: 400px;
         margin-right: 0;
         margin-top: 30px;
@@ -201,13 +224,13 @@ header p{
 
     /*put the feature article together*/
     #feature-article img{
-        width: 700px;
+        width: 600px;
     }
     #feature-description{
         display: flex;
         flex-direction: column;
         /*border: pink 1px solid;*/
-        width: 700px;
+        width: 610px;
         height: 400px;
         background-image: url('pictures/stranger-kindness.jpg');
         background-size: cover;
@@ -225,21 +248,66 @@ header p{
         flex-direction: row;
         width: 80%;
         /*border: 1px red solid;*/
-        margin-left: 10%;
+        margin-left: 12%;
+        margin-top: 30px;
     }
+
 
 
 
 /*setting up the fonts for the boxes*/
     h3{
-        font-size: 30px;
+        font-size: 38px;
         text-transform: uppercase;
         letter-spacing: 2px;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     h4{
-        font-size: 12px;
+        font-size: 13px;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: bold;
     }
+
+    #feature-description h4{
+      margin-left: 20px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+
+    #feature-description p{
+        font-size: 38px;
+        margin-left: 20px;
+        margin-bottom: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding-right: 20px;
+        text-shadow: 1px 1px black;
+    }
+
+    .icon-pairs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 130px;
+    }
+
+    .icon-pairs2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 130px;
+        margin-left:20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: #ffce00 solid 3px;
+    }
+    .icon-pairs h4{
+        padding: 0;
+        margin: 0;
+    }
+  
+
+
