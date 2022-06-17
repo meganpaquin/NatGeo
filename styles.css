@@ -18,6 +18,7 @@ a{
 /*header*/
 #small-logo{
     visibility: hidden;
+    display: none;
 }
 nav{
     display: flex;
@@ -139,6 +140,7 @@ header p{
     border-bottom: #ffce00 4px solid;
 }
 
+/*look into the subscribe tag... is it working properly?*/
 #subscribe-inline{
     background-color: black;
     color: white;

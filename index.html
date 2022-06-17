@@ -10,8 +10,8 @@
     <script src="https://kit.fontawesome.com/2b8896c554.js" crossorigin="anonymous"></script>
 
     <!--import the CSS styles-->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" media="(max-width: 800px)" href="small-devices.css">
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <link rel="stylesheet" href="small-devices.css">
 
 
 </head>
@@ -19,7 +19,7 @@
     <nav>
         <img id="full-size-natgeo-logo" src="pictures/national-geographic.webp" alt="natgeo logo">
         <img id="small-logo" src="pictures/small-logo.png" alt="smaller natgeo logo">
-        <a href="#">Login</a>
+        <a id="login" href="#">Login</a>
         <a href="#"><i id="magnify-icon" class="fa-solid fa-magnifying-glass"></i></a>
         <a id="newsletter" href="#">Newsletters</a>
         <a id="subscribe" href="#">Subscribe</a>
@@ -29,14 +29,14 @@
 
     <header>
         <h1>Latest Stories</h1>
-        <p><a href="" alt=""><span id="subscribe-scroll-up">Subscribe</span></a> for full access to read stroies from National Geographic.</p>
+        <p><span id="subscribe-scroll-up">Subscribe</span> for full access to read stroies from National Geographic.</p>
         <div class="line"></div>
     </header>
 
     <main>
         <section id="everything">
         <section id="latest-stories-box">
-            <h3>Today's Picks</h3>
+                <h3>Today's Picks</h3>
                 <div class="picture-title-left">
                     <img src="pictures/pills.webp" alt="image of medical pills">
                     <div class="title-plus-description-box">
@@ -84,6 +84,7 @@
 
         <section id="feature-article">
             <div id="feature-image">
+                <div class="contain-image"><img src="pictures/stranger-kindness.jpg" alt="example"></div>
                 <div id="feature-description">
                     <h4>History & Culture</h3>
                     <p>How a stranger's kindness helped give us the Big Bang Theory</p>
@@ -97,22 +98,22 @@
                     <a href="#" target="_blank">
                         <div class="highlight-img"><img src="pictures/chefs-cooking.jpg" alt="image of chefs"></div>    
                         <div class="medium-feature-description">
-                            <h4><a href="#" target="_blank">Photography</a><span style="margin-left: 15px; font-weight: lighter;"><br>Photo of the Day</span></h4>
+                            <h4><a href="#" target="_blank">Photography</a><span style="margin-left: 15px; font-weight: lighter;">Photo of the Day</span></h4>
                             <p>31 Archival photos that will ignite your curiosity</p>
                             <div class="icon-pairs">   
-                                <i class="fa-solid fa-images color-icon"></i><h4>See Photos</h4>
+                                <i class="fa-solid fa-images color-icon"></i><h5>See Photos</h5>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="highlight-one">
+                <div class="highlight-two">
                     <a href="#" target="_blank">
                         <div class="highlight-img"><img src="pictures/garbage-art.jpg" alt="image of magazine"></div>
                         <div class="medium-feature-description"> 
                             <h4><a href="#" target="_blank">Magazine</a><span style="margin-left: 15px; font-weight: lighter;"><a href="#" target="_blank">Proof</a></span></h4>
                             <p>These artists transform garbage into garb to take a stand</p>
                             <div class="icon-pairs" style="width:70px">   
-                                <i class="fa-solid fa-bars color-icon"></i><h4>Read</h4>
+                                <i class="fa-solid fa-bars color-icon"></i><h5>Read</h5>
                             </div>
                         </div>
                     </a>
