@@ -3,6 +3,7 @@
 /*global*/
 body{
     margin: 0px;
+    margin-bottom: 20px;
     padding: 0px;
     background-color: black;
     background-attachment: scroll;
@@ -17,11 +18,20 @@ a{
     
 }
 
-/*header*/
-#small-logo{
-    visibility: hidden;
+#feature-image{
     display: none;
 }
+
+#small-logo{
+    display: none;
+}
+
+#full-size-natgeo-logo{
+    display: inline-block;
+    margin-right: 55%;
+}
+
+/*header*/
 nav{
     display: flex;
     flex-direction: row;
@@ -142,7 +152,6 @@ header p{
     border-bottom: #ffce00 4px solid;
 }
 
-/*look into the subscribe tag... is it working properly?*/
 #subscribe-inline{
     background-color: black;
     color: white;
@@ -167,8 +176,8 @@ header p{
         display: flex;
         flex-direction: row;
         width: 350px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         margin-right: 0;
         padding-right: 10px;
         padding-top: 0;
@@ -207,55 +216,104 @@ header p{
     }
 
     /*medium feature stories*/
+    #article-highlights{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 610px;
+        
+    }
+    
+    .icon-pairs{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        height: auto;
+        width: 200px;
+        margin: 0 0 0 0;
+    }
+    
+    .color-icon{
+        margin-right: 10px;  
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .highlight-img{
+        max-width: 100%;
+        max-height: 240px;
+        overflow: hidden;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    
+    .highlight-img img{
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        /*animation*/
+        transition: all .5s ease-in-out;
+        scale: 1;
+        overflow: hidden;
+    }
+    
+    .highlight-img:hover img{
+        transform: scale(1.05);
+        border-bottom: #ffce00 5px;
+    }
+    
     .medium-feature-description{
         display: flex;
         flex-direction: column;
-        width: 280px;
-        height: 200px;
-        margin-left: 0;
-        padding-right: 15px;
-        padding-left: 20px;
-        background-color: white;
+        background: white;
         color: black;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        padding-bottom: 25px;
+        height: 190px;
+    }
+    
+    .medium-feature-description h4 a{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: dimgray;
+        margin: 0 0 0 0;
+    }
+    
+    .medium-feature-description h4{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: dimgray;
+        margin: 15px 0px 5px 20px;
+    }
+    
+    .medium-feature-description h5{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: black;
+        justify-content: flex-start;
+        margin: 0 0 0 0;
+        padding: 0;
+        text-shadow: none;
+    }
+    
+    .medium-feature-description p{
+        font-size: 22px;
+        letter-spacing: 0;
+        font-weight: bold;
+        margin: 10px 15px 20px 20px;
     }
     
     .highlight-one{
         display: flex;
         flex-direction: column;
-        width: 280px;
-        height: 400px;
-        margin-right: 40px;
         margin-top: 30px;
-        padding: 0 0 0 0;
-    }
-    .highlight-img{
-        width: 280px;
-        height: 200px;
-        position: center center;
-        overflow: hidden;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-
-    }
-
-    .highlight-img:hover{
-        border-bottom: #ffce00 solid 5px;
-    }
-
-    .highlight-img img{
-        width: 280px;
-        height: 200px;
-        transition: all 1s ease-in-out;
-    }
-
-    .highlight-img:hover img{
-        transform: scale(1.20);
-    }
-
-    #article-highlights{
-        display: flex;
-        flex-direction: row;
-        flex: right;
+        padding: 0;
+        width: 285px;
+        
     }
 
     /*put the feature article together*/
@@ -285,7 +343,7 @@ header p{
 
     #everything{
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         width: 80%;
         margin-left: 12%;
         margin-top: 30px;
@@ -293,7 +351,7 @@ header p{
 
 /*setting up the fonts for the boxes*/
     h3{
-        font-size: 34px;
+        font-size: 38px;
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: 0;
@@ -311,11 +369,10 @@ header p{
 
     #feature-description p{
         font-size: 38px;
-        margin-top: 10px;
         margin-left: 20px;
         margin-bottom: 0;
         font-weight: bold;
-        letter-spacing: .1px;
+        letter-spacing: 1px;
         padding-right: 20px;
         text-shadow: 1px 1px black;
     }
@@ -324,7 +381,7 @@ header p{
         font-size: 22px;
         font-weight: bolder;
         letter-spacing: 1px;
-        margin-top: 20px;
+        margin-top: 0;
         color: black;
     }
 
@@ -349,7 +406,7 @@ header p{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 110px;
+        width: 130px;
         margin-bottom: 30px;
         margin-top: 10px;
     }
@@ -357,35 +414,26 @@ header p{
     .icon-pairs2{
         display: flex;
         flex-direction: row;
-        align-items: left;
-        width: 70px;
-        margin-left: 20px;
+        justify-content: space-between;
+        align-items: center;
+        width: 130px;
+        margin-left:20px;
         margin-top: 20px;
         margin-bottom: 20px;
+        border: #ffce00 solid 3px;
     }
-
-    .icon-pairs2 h4{
-        padding: 0;
-        margin: 0;
-    }
-
     .icon-pairs h4{
         padding: 0;
         margin: 0;
-    }
-
-    .header-icon{
-        color: white;
-        margin-right: 0;
     }
 
     .color-icon{
         color: black;
         font-size: 14px;
     }
-
+    
     .see-more{
-        border-bottom: #ffce00 solid 5px;
+        border-bottom: #ffce00 solid 3px;
         margin-right: 340px;
         text-transform: uppercase;
         letter-spacing: .5px;
@@ -402,5 +450,6 @@ header p{
         background-position: left bottom;
         color:  black;
     }
+
 
 }
