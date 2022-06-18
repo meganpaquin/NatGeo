@@ -1,3 +1,5 @@
+@media (min-width: 1100px){
+
 /*global*/
 body{
     margin: 0px;
@@ -400,3 +402,5 @@ header p{
         background-position: left bottom;
         color:  black;
     }
+
+}
