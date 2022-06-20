@@ -17,27 +17,8 @@ a{
 img{
     max-width: 100%;
 }
-/*set up the nav menu bar*/
-#menu{
-    visibility: hidden;
-    display: none;
-}
-#newsletter{
-    visibility: hidden;
-    display: none;
-}
-#magnify-icon{
-    visibility: hidden;
-    display: none;
-}
-#full-size-natgeo-logo{
-    visibility: hidden;
-    display: none;
-}
-#small-logo{
-    visibility: visible;
-}
 
+/*set up the nav menu bar*/
 nav{
     display: flex;
     flex-direction: row;
@@ -45,32 +26,45 @@ nav{
     height: 8vh;
     justify-content: flex-end;
     background-color: white;
-    color: black;
     margin: 0;
     padding: 0;
+}
+
+#full-size-natgeo-logo{
+    display: inline-block;
+    visibility: visible;
+    margin-right: 25%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.icon-menu{
+    visibility: visible;
+    display: inline-block;
+    color: black;
+    margin-right: 3vh;
+    margin-left: 1.5vh;
+    margin-top: 2.75vh;
     align-items: center;
+    font-weight: normal;
+}
+
+#small-logo{
+    display: none;
+    visibility: hidden;
 }
 
 nav a{
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    background: white;
     font-size: 14px;
     font-weight: bolder;
     letter-spacing: 3px;
+    margin: 0px;
     margin-left: 14px;
     height: 5vh;
     padding-top: 3vh;
-    margin: 0px;
-}
-
-#small-logo{
-    margin-right: 55%;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    color: white;
-    background-color: white;
 }
 
 #subscribe{
@@ -91,21 +85,53 @@ nav a{
 #subscribe:hover{
     background-position: left bottom;
     color: black;
-    cursor: pointer;
 }
 
-.icon-menu{
-    margin-right: 4vh;
-    margin-left: 4vh;
+#newsletter{
+    text-decoration: underline;
+    text-decoration-color: #ffce00;
+    text-decoration-style: bolder;
+    height: 3vh;
+    margin-top: 3vh;
+    padding-top: 0px;
+    font-weight: normal;
+    text-transform: capitalize;
+    /*make the animation*/
+    display: block;
+    background: linear-gradient(to top, #ffce00 50%, white 50%);
+    background-size: 100% 200%;
+    background-position: left top;
+    transition: all .5s ease-out;
+    
+}
+
+#newsletter:hover{
+    text-decoration: none;
+    font-weight: normal;
+    background-position: left bottom;
+}
+
+#subscribe-scroll-up{
+    display: inline-block;
+    background: linear-gradient(to top, #ffce00 50%, black 50%);
+    background-size: 100% 200%;
+    background-position: left top;
+    transition: all 1s ease-out;
+}
+#subscribe-scroll-up:hover{
+    background-position: left bottom;
     color: black;
 }
 
-#login{
-    margin-right: 20px;
+#icon-menu{
+    display: visible;
+    visibility: visible;
+    margin-right: 4vh;
+    margin-left: 1vh;
+    font-weight: normal;
 }
 
 /*set up the header*/
-/*header*/
 h1{
     text-align: center;
     font-size: 40px;
@@ -281,7 +307,11 @@ header p{
 
 .highlight-img:hover img{
     transform: scale(1.05);
-    border-bottom: #ffce00 5px;
+}
+
+.highlight-img:hover{
+    height: 215px;
+    border-bottom: 5px solid #ffce00 ;
 }
 
 .medium-feature-description{
@@ -296,11 +326,25 @@ header p{
     height: 200px;  
 }
 
+.medium-feature-description:hover{
+    cursor: pointer;
+}
+
 .medium-feature-description h4 a{
     text-transform: uppercase;
     font-size: 14px;
     color: dimgray;
     margin: 0 0 0 0;
+}
+
+.medium-feature-description h4 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.medium-feature-description h4:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .medium-feature-description h4{
@@ -320,12 +364,21 @@ header p{
     text-shadow: none;
 }
 
+.medium-feature-description h5:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .medium-feature-description p{
     font-size: 26px;
     letter-spacing: 0;
     line-height: 34px;
     font-weight: bold;
     margin: 10px 15px 40px 20px;
+}
+
+.medium-feature-description p:hover{
+    cursor: pointer;
 }
 
 .highlight-one{
@@ -355,6 +408,7 @@ h3{
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     flex: left;
+    cursor: pointer;
 }
 
 .title-plus-description-box{
@@ -364,6 +418,7 @@ h3{
     width: 250px;
     margin-left: 15px;
     margin-top: 0px;
+    cursor: pointer;
 }
 
 .picture-title-left{
@@ -423,5 +478,6 @@ h3{
 .see-more:hover{
     color: black;
     background-position: left bottom;
+    cursor: pointer;
 }
 }

@@ -271,7 +271,11 @@ header p{
 
 .highlight-img:hover img{
     transform: scale(1.05);
-    border-bottom: #ffce00 5px;
+}
+
+.highlight-img:hover{
+    height: 315px;
+    border-bottom: 5px solid #ffce00 ;
 }
 
 .medium-feature-description{
@@ -285,11 +289,25 @@ header p{
     height: 200px;  
 }
 
+.medium-feature-description:hover{
+    cursor: pointer;
+}
+
 .medium-feature-description h4 a{
     text-transform: uppercase;
     font-size: 14px;
     color: dimgray;
     margin: 0 0 0 0;
+}
+
+.medium-feature-description h4 a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.medium-feature-description h4:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .medium-feature-description h4{
@@ -313,6 +331,10 @@ header p{
     letter-spacing: 0;
     font-weight: bold;
     margin: 10px 15px 40px 20px;
+}
+
+.medium-feature-description p:hover{
+    cursor: pointer;
 }
 
 .highlight-one{
@@ -351,6 +373,7 @@ h3{
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     flex: left;
+    cursor: pointer;
 }
 
 .title-plus-description-box{
@@ -360,6 +383,7 @@ h3{
     margin-left: 15px;
     margin-top: 0px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .picture-title-left{
@@ -412,5 +436,6 @@ h3{
 .see-more:hover{
     color: black;
     background-position: left bottom;
+    cursor: pointer;
 }
 }

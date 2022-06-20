@@ -28,7 +28,7 @@ a{
 
 #full-size-natgeo-logo{
     display: inline-block;
-    margin-right: 55%;
+    margin-right: 52%;
 }
 
 /*header*/
@@ -119,10 +119,12 @@ nav a{
     color: black;
 }
 
-#icon-menu{
+.icon-menu{
     margin-right: 4vh;
     margin-left: 1vh;
     font-weight: normal;
+    color: black;
+    margin-top: 2.75vh;
 }
 
 /*header*/
@@ -181,6 +183,7 @@ header p{
         margin-right: 0;
         padding-right: 10px;
         padding-top: 0;
+        cursor: pointer;
     }
 
     .align-items-up{
@@ -202,6 +205,12 @@ header p{
         height: 90px;   
         align-items: flex-start; 
     }
+
+    .title-plus-description-box a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
     .title-plus-description-box p{
         padding-top: 0;
         font-weight: bolder; 
@@ -213,6 +222,7 @@ header p{
         width: 90px;
         flex: left;
         padding: 0;
+        cursor: pointer;
     }
 
     /*medium feature stories*/
@@ -247,6 +257,11 @@ header p{
         margin: 0 0 0 0;
         padding: 0 0 0 0;
     }
+
+    .highlight-img:hover{
+        border-bottom: 5px solid #ffce00;
+        height: 235px;
+    }
     
     .highlight-img img{
         width: 100%;
@@ -263,6 +278,7 @@ header p{
     .highlight-img:hover img{
         transform: scale(1.05);
         border-bottom: #ffce00 5px;
+        height: 235px;
     }
     
     .medium-feature-description{
@@ -274,6 +290,7 @@ header p{
         padding: 0 0 0 0;
         padding-bottom: 25px;
         height: 190px;
+        cursor: pointer;
     }
     
     .medium-feature-description h4 a{
@@ -288,6 +305,15 @@ header p{
         font-size: 14px;
         color: dimgray;
         margin: 15px 0px 5px 20px;
+    }
+
+    .medium-feature-description h4:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .medium-feature-description h4 a:hover{
+        text-decoration: underline;
+        cursor: pointer;
     }
     
     .medium-feature-description h5{
@@ -326,6 +352,7 @@ header p{
         background-size: cover;
         justify-content: end;
         background-position: center center;
+        cursor: pointer;
     }
 
     #feature-article{
@@ -338,6 +365,11 @@ header p{
         background-image: url('pictures/stranger-kindness.jpg');
         background-size: 120%;
         background-position: center center;
+        cursor: pointer;
+    }
+
+    #feature-description h4:hover{
+        text-decoration: underline;
         cursor: pointer;
     }
 
@@ -404,32 +436,44 @@ header p{
     .icon-pairs{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
-        width: 130px;
+        width: 160px;
+        height: auto;
         margin-bottom: 30px;
         margin-top: 10px;
+        padding: 0;
     }
 
     .icon-pairs2{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         width: 130px;
+        height: auto;
         margin-left:20px;
         margin-top: 20px;
         margin-bottom: 20px;
-        border: #ffce00 solid 3px;
-    }
-    .icon-pairs h4{
         padding: 0;
+    }
+    
+    .icon-pairs h5{
+        padding-bottom: 30px;
         margin: 0;
+        text-align: center;
+    }
+
+    .icon-pairs2 h4{
+        padding-bottom: 0;
+        margin: 0;
+        text-align: center;
     }
 
     .color-icon{
         color: black;
         font-size: 14px;
+        text-align: center;
     }
     
     .see-more{
@@ -449,6 +493,7 @@ header p{
     .see-more:hover{
         background-position: left bottom;
         color:  black;
+        cursor: pointer;
     }
 
 
